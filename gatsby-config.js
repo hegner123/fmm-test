@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "fmm-test",
+    description:"testing gatsby for fmm main site"
   },
   plugins: [
     {
@@ -11,5 +12,6 @@ module.exports = {
     },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-sharp"
   ],
 };
