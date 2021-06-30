@@ -1,28 +1,30 @@
 import * as React from 'react'
 import {Brand, Navbar, NavItem, NavMenu, NavLink } from './style';
 
+
+
 const PageHeader = () => {
     return (
         <Navbar>
             <Brand>
-                <h1>Freshmove Media</h1>
+               <a css={"text-decoration:none;color:var(--text-color)"}href="/"><h1>Freshmove Media</h1></a>
             </Brand>
             <div css={"width:75%;"}>
                 <NavMenu css={"display:flex;"}>
                     <NavItem>
-                        <NavLink href="/graphicDesign">Graphic Design</NavLink>
+                        <NavLink active={"graphicDesign" === window.location.pathname.slice(1)} href="/graphicDesign">Graphic Design</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/webDesign">Web Design</NavLink>
+                        <NavLink active={"webDesign" === window.location.pathname.slice(1)} href="/webDesign">Web Design</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/social">Social Media</NavLink>
+                        <NavLink active={"social" === window.location.pathname.slice(1)} href="/social">Social Media</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/about">About</NavLink>
+                        <NavLink active={"about" === window.location.pathname.slice(1)} href="/about">About</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/contact">Contact</NavLink>
+                        <NavLink active={"contact" === window.location.pathname.slice(1)} href="/contact">Contact</NavLink>
                     </NavItem>
                 </NavMenu>
             </div>

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import PageHeader from '../components/header';
 import "../css/style.css";
+import {TestButton} from '../components/buttons'
 
 const HomePage = ({data}) => {
   const wpPage = data.allWpPage.edges[0].node.content
@@ -10,9 +11,9 @@ const HomePage = ({data}) => {
   return (
     <div css={"width:100%;"}>
       <PageHeader css={"width:100%;"}/>
-      <a href="/graphicDesign">Graphic Design</a>
       {wpContent.map(content => <div key={content}>
           {content}
+          <TestButton />
       </div>
         )}
     </div>
