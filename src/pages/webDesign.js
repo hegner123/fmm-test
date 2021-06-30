@@ -2,12 +2,12 @@ import * as React from 'react'
 import PageHeader from '../components/header';
 
 
-const GraphicDesign = () => {
+const WebDesign = () => {
   
   return (
     <div>
       <PageHeader/>
-      Graphic Design Page
+      WebDesign Page
     </div>
   )
 }
@@ -18,4 +18,4 @@ const GraphicDesign = () => {
 
 
 
-export default GraphicDesign
+export default WebDesign
