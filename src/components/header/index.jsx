@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {Brand, Navbar, NavItem, NavMenu, NavLink } from './style';
+import {Brand, Logo, Navbar, NavItem, NavMenu, NavLink } from './style';
 
 
 
@@ -7,10 +7,10 @@ const PageHeader = () => {
     return (
         <Navbar>
             <Brand>
-               <a css={"text-decoration:none;color:var(--text-color)"}href="/"><h1>Freshmove Media</h1></a>
+               <NavLink href="/"><Logo>Freshmove Media</Logo></NavLink>
             </Brand>
             <div css={"width:75%;"}>
-                <NavMenu css={"display:flex;"}>
+                <NavMenu>
                     <NavItem>
                         <NavLink active={"graphicDesign" === window.location.pathname.slice(1)} href="/graphicDesign">Graphic Design</NavLink>
                     </NavItem>

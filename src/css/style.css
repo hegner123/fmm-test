@@ -1,5 +1,9 @@
 :root{
     --text-color:#000;
+    --bg-1:#fff;
+    --bg-2:#393939;
+    --color-1:#3AB24A;
+    --color-2:#25AAE1;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -20,6 +24,7 @@ time, mark, audio, video {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: Helvetica;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
