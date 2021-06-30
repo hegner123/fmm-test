@@ -8,7 +8,6 @@ import {ContentBox, ContentTitle, ContentBody} from '../components/ContentBox';
 const HomePage = ({data}) => {
   const wpPage = data.allWpPage.edges[0].node.content
   let wpContent = wpPage.split(",");
-  console.log(wpContent)
 
   return (
     <div css={"width:100%;"}>
